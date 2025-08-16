@@ -1,0 +1,22 @@
+app:
+  symbols: [BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT, XRP/USDT, ADA/USDT, DOGE/USDT, TON/USDT, AVAX/USDT, LINK/USDT]
+  timeframes: [15m, 1h, 4h]
+  exchange: okx
+  rr_alert_threshold: 2.0
+  ensemble_window: 300
+
+risk:
+  fee_bps: 2.5
+  slippage_bps: 1.0
+  atr_k_sl: 2.5
+  atr_k_tp: 3.8
+  trail_start_R: 1.0
+  trail_atr_mult: 2.0
+  risk_pct_per_trade: 0.5
+  kelly_cap_pct: 1.0
+  max_gross_exposure_pct: 60.0
+
+backtest:
+  train_ratio: 0.7
+  walkforward_windows: 4
+  initial_cash: 10000
